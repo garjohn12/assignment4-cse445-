@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding = "UTF-8"?> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name = "Hotels"> 
+    <xsd:complexType> 
+        <xsd:sequence> 
+
+        <xsd:element name = "Hotel1" maxOccurs = "unbounded"> 
+          <xsd:complexType> 
+            <xsd:sequence>
+
+              <!--The name-->
+              <xsd:element name = "Name" type = "xsd:string"/> 
+              <!-- Now the phone number-->
+              <xsd: element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
+
+              <!--The address-->
+              <xsd: element name = "Address"> 
+                <xsd:complexType>
+                  <xsd:sequence> 
+                    <xsd:element name = "Street" type="xsd:string"/>
+                    <xsd:element name = "City" type="xsd:string"/>
+                    <xsd:element name = "State" type="xsd:string"/>
+                    <xsd:element name = "Zip" type="xsd:string"/>
+                    <xsd:element name = "NearestAirport" type="xsd:string"/>
+                </xsd:sequence>
+
+                <asd:attribute name="Number" type="xsd:string" use="required"/> 
+               </xsd:complexType> 
+              </xsd:element> 
+            </xsd:sequence> 
+
+            <xsd:attribute name="Rating" type="xsd:decimal" use="optiona1"/> 
+            </xsd:complextType> 
+            </xsd:element> 
+
+            </xsd:sequence> 
+            </xsd:complextType> 
+            </xsd:element> 
+            </xsd:schema> 
+
+
+             
