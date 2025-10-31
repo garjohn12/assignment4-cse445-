@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding = "UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?> 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-<xsd:element name = "Hotels"> 
+<xsd:element name="Hotels"> 
     <xsd:complexType> 
         <xsd:sequence> 
 
-        <xsd:element name = "Hotel" maxOccurs = "unbounded"> 
+        <xsd:element name="Hotel" maxOccurs="unbounded"> 
           <xsd:complexType> 
             <xsd:sequence>
 
               <!--The name-->
-              <xsd:element name = "Name" type = "xsd:string"/> 
+              <xsd:element name="Name" type="xsd:string"/> 
               <!-- Now the phone number-->
               <xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
 
               <!--The address-->
-              <xsd:element name = "Address"> 
+              <xsd:element name="Address"> 
                 <xsd:complexType>
                   <xsd:sequence> 
-                    <xsd:element name = "Street" type="xsd:string"/>
-                    <xsd:element name = "City" type="xsd:string"/>
-                    <xsd:element name = "State" type="xsd:string"/>
-                    <xsd:element name = "Zip" type="xsd:string"/>
-                    <xsd:element name = "NearestAirport" type="xsd:string"/>
+                    <xsd:element name="Street" type="xsd:string"/>
+                    <xsd:element name="City" type="xsd:string"/>
+                    <xsd:element name="State" type="xsd:string"/>
+                    <xsd:element name="Zip" type="xsd:string"/>
+                    <xsd:element name="NearestAirport" type="xsd:string"/>
                 </xsd:sequence>
 
                 <xsd:attribute name="Number" type="xsd:string" use="required"/> 
@@ -36,8 +36,10 @@
 
             </xsd:sequence> 
             </xsd:complexType> 
-            </xsd:element> 
+            </xsd:element>
+    
             </xsd:schema> 
 
 
              
+
