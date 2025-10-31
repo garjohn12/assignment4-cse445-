@@ -24,21 +24,23 @@
                     <xsd:element name="Zip" type="xsd:string"/>
                     <xsd:element name="NearestAirport" type="xsd:string"/>
                 </xsd:sequence>
-
                 <xsd:attribute name="Number" type="xsd:string" use="required"/> 
                </xsd:complexType> 
               </xsd:element> 
+                
             </xsd:sequence> 
 
             <xsd:attribute name="Rating" type="xsd:decimal" use="optional"/> 
-            </xsd:complexType> 
+             </xsd:complexType> 
             </xsd:element> 
 
             </xsd:sequence> 
-            </xsd:complexType> 
-            </xsd:element>
-            </xsd:schema> 
+        </xsd:complexType> 
+    </xsd:element>
+    
+</xsd:schema> 
 
 
              
+
 
